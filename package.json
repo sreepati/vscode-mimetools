@@ -1,0 +1,109 @@
+{
+    "name": "mimeconvertor",
+    "displayName": "Mime Tools",
+    "description": "Convert to multiple formats",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.29.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.encodemd5",
+        "onCommand:extension.encode64",
+        "onCommand:extension.decode64",
+        "onCommand:extension.encodeutf8",
+        "onCommand:extension.decodeutf8",
+        "onCommand:extension.encodeurl",
+        "onCommand:extension.decodeurl",
+        "onCommand:extension.fullencodeurl",
+        "onCommand:extension.lcase",
+        "onCommand:extension.ucase",
+        "onCommand:extension.ccase",
+        "onCommand:extension.s2c"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.encodemd5",
+                "title": "MD5 Encode",
+                "category": "Mime Tools"
+            },
+            {
+                "command": "extension.encode64",
+                "title": "Base 64 Encode",
+                "category": "Mime Tools"
+            },
+            {
+                "command": "extension.decode64",
+                "title": "Base 64 Decode",
+                "category": "Mime Tools"
+            },
+            {
+                "command": "extension.encodeutf8",
+                "title": "UTF8 Encode",
+                "category": "Mime Tools"
+            },
+            {
+                "command": "extension.decodeutf8",
+                "title": "UTF8 Decode",
+                "category": "Mime Tools"
+            },
+            {
+                "command": "extension.encodeurl",
+                "title": "URL Encode",
+                "category": "Mime Tools"
+            },
+            {
+                "command": "extension.decodeurl",
+                "title": "URL Decode",
+                "category": "Mime Tools"
+            },
+            {
+                "command": "extension.fullencodeurl",
+                "title": "Full URL Encode",
+                "category": "Mime Tools"
+            },
+            {
+                "command": "extension.lcase",
+                "title": "Lower case",
+                "category": "Mime Tools"
+            },
+            {
+                "command": "extension.ucase",
+                "title": "Upper case",
+                "category": "Mime Tools"
+            },
+            {
+                "command": "extension.ccase",
+                "title": "Capitalize case",
+                "category": "Mime Tools"
+            },
+            {
+                "command": "extension.s2c",
+                "title": "Snake to Camel case",
+                "category": "Mime Tools"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^3.1.4",
+        "vscode": "^1.1.21",
+        "tslint": "^5.8.0",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
+    },
+    "dependencies": {
+        "@types/crypto-js": "^3.1.43",
+        "crypto-js": "^3.1.9-1"
+    }
+}
