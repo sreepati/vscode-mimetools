@@ -1,65 +1,49 @@
 # mimeconvertor README
 
-This is the README for your extension "mimeconvertor". After writing up a brief description, we recommend including the following sections.
+Mime tools for Visual Studio Code. Inspired from Notepad++'s mime tools.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Convert text to MD5
 
-For example if there is an image subfolder under your extension project workspace:
+Base 64 Encode Text
 
-\!\[feature X\]\(images/feature-x.png\)
+Base 64 Decode Text
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+URL Encode Text
+
+URL Decode Text
+
+Full URL Encode Text
+
+Convert text to Lowercase
+
+Convert text to Uppercase
+
+Convert text to Capitalize
+
+Convert Snake case to Camel case (e.g. this_is_snake_case --> thisIsCamelCase)
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Not exactly. For md5 it works on native node crypto module
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+Not any available now
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Dont know any. If found raise an issue in github.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+### 1.0
+Initial release
 
 -----------------------------------------------------------------------------------------------------------
 
-## Working with Markdown
+## LICENSE
 
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+MIT License, see License
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
