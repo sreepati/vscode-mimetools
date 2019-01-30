@@ -2,7 +2,9 @@
     "name": "mimeconvertor",
     "displayName": "Mime Tools",
     "description": "Convert to multiple formats",
-    "version": "1.0",
+    "version": "0.1.1",
+    "publisher": "ajogyashree",
+    "repository": "https://github.com/ajogyashree/vscode-mimetools",
     "engines": {
         "vscode": "^1.29.0"
     },
